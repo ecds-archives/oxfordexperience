@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  {% block meta%}{% endblock %}
+   <title>{% block pagetitle %} PAGE TITLE - {% endblock %} The Oxford Experience </title>
+   <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/oxfexp.css"/>
+   <!--<link rel="stylesheet" type="text/css" href="http://beck.library.emory.edu/oxfordexperience/web/css/oxfexp.css"/>-->
+</head>
+
+<body>
+ <div class="headimage">
+   <!--img class="headimage" src="http://beck.library.emory.edu/oxfordexperience/web/images/oxexhead.jpg" alt="Oxford
+ College" width='473' height='288'/-->
+   <img class="headimage" src="{{ STATIC_URL }}images/oxexhead.jpg" alt="Oxford
+ College" width='473' height='288'/>
+<h2 class="subhead">The Oxford Experience</h2>
+</div>
+
+<div>
+<form action="{% url search %}" method="get"><p class="searchbox"><b>keyword search:</b><input id="key"
+  type="text" size="20" name="keyword"/> <input type="Submit" value="Go"></p></form>
+</div>
+
+<div class="subnav">
+<p class="navlinks">
+<a href="{% url docs %}"><span id="ho">Home</span></a>
+<a href="{% url overview %}"><span id="ov">Overview</span></a>
+<a href="{% url docs %}"><span id="br">Browse</span></a>
+<a href="{% url search %}"><span id="se">Search</span></a>
+</p></div>
+
+<div class="contents">
+{% block title %}
+{% endblock %}
+
+{% block content %}
+{% endblock %}
+</div>
+
+<div class="externalnav">
+<p class="links" id="beck">
+<a href="http://beck.library.emory.edu/"><span id="bc">The Beck Center</span></a>
+<a href="http://www.emory.edu/OXFORD/"><span id="src">Oxford College</span></a>
+</p>
+</div>
+
+<div class="foot">
+  <hr class="foot"/>
+<p><span id="con"><a href="mailto:beckctr@emory.edu">Contact the Beck Center</a></span> | <span id="euc"><a href="http://www.library.emory.edu/">Euclid</a></span> | <span id="ul"><a href="http://www.emory.edu/libraries.cfm">University Libraries</a></span> | <span id="univ"><a href="http://www.emory.edu/">Emory University</a></span></p>
+<p class="footnav"><a href="http://www.tei-c.org/"><img src="http://www.tei-c.org/About/Badges/powered-by-TEI.png" alt="Powered by TEI" border="0"/></a></p>
+</div>
+
+</body>
+</html>

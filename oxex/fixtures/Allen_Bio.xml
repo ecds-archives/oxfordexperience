@@ -1,0 +1,188 @@
+<TEI xml:id="oeAllenBio" xmlns="http://www.tei-c.org/ns1.0" xmlns:rng="relaxng.org/ns/structure/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Biography of Young J. Allen, <date>date unknown</date>, an electronic edition</title>
+    <author>
+      <name type="person">
+        <choice>
+          <reg>Jarrell, Charles Crawford, 1874-1961.</reg>
+          <sic>Charles Jarrell</sic>
+        </choice>
+      </name>
+    </author>
+      </titleStmt>
+      <extent></extent>
+      <publicationStmt>
+        <publisher>Emory University, Lewis H. Beck Center</publisher>
+        <pubPlace>Atlanta, Georgia</pubPlace>
+        <date>2007</date>
+        <availability>
+          <p>&#x00A9; 2007, Lewis H. Beck Center, Emory University.
+  Emory University makes a claim of copyright only to original
+  contributions made by the Oxford Experience Project participants.  Emory University makes no claim of copyright to the original text.  Permission is granted to download, transmit, or otherwise reproduce, distribute, or display the contributions to this work claimed by Emory University for non-profit educational purposes, provided that this header is included in its entirety.  For further inquiries about this text's availability, please contact:
+<address><addrLine>Lewis H. Beck Center</addrLine><addrLine>Emory University</addrLine><addrLine>Robert W. Woodruff Library</addrLine><addrLine>Atlanta, GA  30322-0053</addrLine><addrLine>United States of America</addrLine><addrLine>Email:  beckctr@emory.edu</addrLine></address></p>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>The Oxford Experience</title>
+        <respStmt>
+          <name>Christine Loflin</name>
+          <name>Adriane Ivey</name>
+          <resp>Principal Investigators</resp>
+        </respStmt>
+      </seriesStmt>
+      <sourceDesc>
+        <bibl>Biography of Young J. Allen, Jarrell428, Manuscript, Archives, and Rare Book Library, Emory University.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>This text was created by the Lewis H. Beck Center as a part
+    of the Oxford Experience Project.  Project participants intend for this encoded text, as well as all texts produced by this project, to be made available on the web for educational, scholarly and pedagogical purposes.</p>
+      </projectDesc>
+      <samplingDecl>
+        <p>The archival material has been transcribed and encoded.
+    Paratextual elements may be provided as digital images only, with some exceptions.</p>
+      </samplingDecl>
+      <editorialDecl>
+        <p>Processing this electronic text file began by creating TIFF
+images of each page using either a flatbed scanner.  Text pages were
+captured in color at 300dpi.  These digital images were converted to
+an electronic text file by transcription.  The text files produced
+have been proofread against the original document or a JPEG image of
+the original.  This proofread text file has then been encoded using
+the recommendations for Level 3 of the TEI in Libraries Guidelines.
+For the details of Level 3 encoding, please see the webpage for TEI
+Guidelines for Best Encoding practices at
+http://www.indiana.edu/~letrs/tei/.  Encoders silently replaced em
+dashes with two dashes.  Page numbers and other text such as titles
+displayed in brackets have been added by the encoder and do not appear
+in the original text.</p>
+      </editorialDecl>
+      <classDecl>
+        <taxonomy xml:id="lcsh">
+          <bibl>
+            <title>Library of Congress Subject Headings</title>
+          </bibl>
+        </taxonomy>
+      </classDecl>
+    </encodingDesc>
+    <profileDesc>
+      <creation>
+        <rs type="collection">Oxford Experience</rs>
+        <rs type="language">English</rs>
+        <rs type="ethnicity">Caucasian</rs>
+        <rs type="form">Edited</rs>
+        <rs type="genre"></rs>
+        <rs type="geography">United States</rs>
+        <date>1800-1899</date>  <!-- or 1900-1999 -->
+      </creation>
+      <textClass>
+        <keywords scheme="#lcsh">
+          <list>
+            <item>Jarrell, Charles Crawford, 1874-1961.</item>
+            <item>Allen, Young John, 1836-1907.</item>
+            <item>Education--United States--History--20th century.</item>
+            <item>Education--Georgia.</item>
+            <item>College students--Georgia.</item>
+         </list>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change>On <date>Oct 29, 2008</date>  
+          <name>Carson Mayberry</name> and <name>Bea Osme&#x00F1;a</name>
+        transcribed and encoded the document. 
+      </change>
+<change>On May 1, 2009 <name>Alice Hickcox</name> corrected the text and encoding and added subject headings.</change>
+    </revisionDesc>
+  </teiHeader>
+
+<text>
+<body>
+<div>
+<pb facs="Allen_Bio_1.jpg"/>
+<head> [Biography of Young J. Allen]</head>
+<opener/>
+<p>Young J. Allen belongs to this remarkable group
+of young Georgians destined to great service. He belongs
+to Oxford by reason of his student days; and by
+reason of his repeated visits to his homeland, when Oxford was always included in
+his itinerary. His mighty personality was impressed on town and college in sermons
+and addresses, and always as Christ's Ambassador to China. On one of those visits he
+honored me with a good long talk,
+as he invited me to walk with him under the old trees which had sheltered him
+as a college-boy. <del rend="strikethrough">in the Ante-Bellum days</del>
+It is not extravagant to call him a colossal
+figure in the history of modern missions.</p>
+
+<p>He was converted while a young
+student in a school near Starrsville, GA.
+He exerted a deep religious influence
+over his fellow-students and we find
+him leading a daily prayer meeting
+for them at the "old log" during one
+of the historic revivals that visited the
+town in those days. He graduated young
+but was mature beyond his years. He soon
+married, sold his plantation and slaves,
+offered himself to the Board of Missions
+<pb facs="Allen_Bio_2.jpg"/>
+and was accepted for China.</p>
+
+<p>He had scarcely laid out his work
+in and around Shanghai when the "War
+Between the States" broke out in his homeland. He was entirely cut off from home
+and forced to take a place as teacher and
+translator for the Chinese Government, in
+order to maintain his family and carry
+on his missionary activity. He held the
+Mission together until the Church of home
+was able to resume its conduct and support,
+he then resigned from the Government service
+and devoted all his time for the rest of his life to his work as a missionary.</p>
+<p>I have heard him say that he considered
+himself as a missionary to the whole nation and
+to the entire body of the Chinese people. He fitted
+himself to be just that. And because China
+was a land of many spoken dialects and
+because it was also a land of one literary
+language, he realized that for his task the
+pen must become his instrument of
+service.</p>
+
+<p>The output of his busy pen would
+comprise a library of nearly 250 volumes--
+many of which were translations. <ref target="Allen_Bio.n1">1.</ref>
+<note xml:id="Allen_Bio.n1" n="1">Life of Young Allen: By Bishop Warren A. Candler page 150.</note>
+<pb facs="Allen_Bio_3.jpg"/>
+He founded the "Review of <del rend="strikethough">Missions</del> the Times" and
+edited it for more than thirty years. I once
+heard him forecasting one of his major literary
+projects. He wanted to show the Chinese
+people that the key to any civilization
+is to be found in the estimate it
+places on womanhood. He carried out
+that purpose; his monumental
+work "Women In All Lands" ran to twenty-one volumes. His "War Between China And
+Japan" ran to sixteen volumes. At a
+memorial service held for Dr. Allen in
+Shanghai, the Chinese presiding officer
+said: "While some missionaries worked
+only in one city or one church, Dr
+Allen through his writings was a missionary to an empire; not only to one,
+but to three--China, Japan and Korea.
+He reached emperors, empresses, princes,
+princesses, viceroys, governors, mayors,
+generals, the literate, and the common
+people." "In the last decade of the
+last decade of the last century Lin Le
+Chih (Young J. Allen) was probably
+more widely known than any (other)
+foreigner who has ever been to China".<ref target="Allen_Bio.n2">1.</ref>
+<note xml:id="Allen_Bio.n2" n="1">Life of Young Allen: Candler pgs. 213, 214, 215,</note></p>
+</div>
+</body>
+</text>
+</TEI>

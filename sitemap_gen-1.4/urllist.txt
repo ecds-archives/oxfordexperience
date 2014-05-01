@@ -1,0 +1,61 @@
+# To add a list of URLs, make a space-delimited text file. The first
+# column contains the URL; then you can specify various optional
+# attributes in the form key=value:
+#
+#  lastmod    = modification time in ISO8601 (YYYY-MM-DDThh:mm:ss+00:00)
+#  changefreq = 'always' | 'hourly' | 'daily' | 'weekly' | 'monthly' |
+#               'yearly' | 'never'
+#  priority   = priority of the page relative to other pages on the same site;
+#                a number between 0.0 and 1.0, where 0.0 is the lowest priority
+#                and 1.0 is the highest priority
+#
+# Note that all URLs must be part of the site, and therefore must begin with
+# the base_url (e.g., 'http://www.example.com/') as specified in config.xml.
+#
+# Any line beginning with a # is a comment.
+#
+# Example contents of the file:
+#
+# http://www.example.com/foo/bar   
+# http://www.example.com/foo/xxx.pdf lastmod=2003-12-31T14:05:06+00:00
+# http://www.example.com/foo/yyy?x=12&y=23 changefreq=weekly priority=0.3
+
+http://localhost:8001
+http://localhost:8001/overview/
+http://localhost:8001/search/
+http://localhost:8001/Conyers_WJ_1858.xml/
+http://localhost:8001/oeDanielPatrick.01/
+http://localhost:8001/oeBylaws/
+http://localhost:8001/letter_to_jimmy/
+http://localhost:8001/wren_diary/
+http://localhost:8001/Thomson716-EmoryPhoenix/
+http://localhost:8001/oeReeves863-1907Summer/
+http://localhost:8001/oeBryanLetter.01/
+http://localhost:8001/Oxford_board_of_commission_mission.xml/
+http://localhost:8001/oeReeveLetter1907-02-16.01/
+http://localhost:8001/final.01/
+http://localhost:8001/oeAllen11-CandlerLetter/
+http://localhost:8001/allen.001/
+http://localhost:8001/oeYun7541892-01-06/
+http://localhost:8001/oeYun754-Jan8.01/
+http://localhost:8001/oeBryanLetter1909-06-06.01/
+http://localhost:8001/FewHallMinutes/
+http://localhost:8001/March_11_1844_Letter.xml/
+http://localhost:8001/Bryan148-1911-03-19/
+http://localhost:8001/civil_war_letter_1861/
+http://localhost:8001/carmichael-1898-03-08.xml/
+http://localhost:8001/oeBryanLetter1908-11-15.01/
+http://localhost:8001/oebryan_letter.01/
+http://localhost:8001/Letter_from_Munson_to_Sister.xml/
+http://localhost:8001/lettermunson.xml/
+http://localhost:8001/summerlinorig.xml/
+http://localhost:8001/oeBryan_Letter1909-09-19.9999/
+http://localhost:8001/Unknown_author_letter_September13.xml/
+http://localhost:8001/Thursday_17th.xml/
+http://localhost:8001/letterfinal/
+http://localhost:8001/oeAllenBio/
+http://localhost:8001/oecarmichael132.01/
+http://localhost:8001/oereeve863-report/
+http://localhost:8001/sister_origp1/
+http://localhost:8001/oeJarrell428EmoryCreed/
+http://localhost:8001/oe1907song3/

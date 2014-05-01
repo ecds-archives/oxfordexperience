@@ -1,0 +1,145 @@
+<TEI xml:id="allen.001" xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>K. T. Tsoong Letter, <date when="1909-01-06">Jan 6, 1909</date>, an electronic edition</title>
+<author><name type="person">
+<choice><reg>Tsoong, Kia Tsing</reg><sic>K. T. Tsoong</sic></choice></name></author>
+      </titleStmt>
+      <extent></extent>
+      <publicationStmt>
+        <publisher>Emory University, Lewis H. Beck Center</publisher>
+        <pubPlace>Atlanta, Georgia</pubPlace>
+        <date>2007</date>
+        <availability>
+          <p>&#x00A9; 2007, Lewis H. Beck Center, Emory University.
+  Emory University makes a claim of copyright only to original
+  contributions made by the Oxford Experience Project participants.  Emory University makes no claim of copyright to the original text.  Permission is granted to download, transmit, or otherwise reproduce, distribute, or display the contributions to this work claimed by Emory University for non-profit educational purposes, provided that this header is included in its entirety.  For further inquiries about this text's availability, please contact:
+<address><addrLine>Lewis H. Beck Center</addrLine><addrLine>Emory University</addrLine><addrLine>Robert W. Woodruff Library</addrLine><addrLine>Atlanta, GA  30322-0053</addrLine><addrLine>United States of America</addrLine><addrLine>Email:  beckctr@emory.edu</addrLine></address></p>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>The Oxford Experience</title>
+        <respStmt>
+          <name>Christine Loflin</name>
+          <name>Adriane Ivey</name>
+          <resp>Principal Investigators</resp>
+        </respStmt>
+      </seriesStmt>
+      <sourceDesc>
+        <bibl><author></author>. <title></title>. <pubPlace></pubPlace>:
+<publisher></publisher>, <date></date>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>This text was created by the Lewis H. Beck Center as a part
+	of the Oxford Experience Project.  Project participants intend for this encoded text, as well as all texts produced by this project, to be made available on the web for educational, scholarly and pedagogical purposes.</p>
+      </projectDesc>
+      <samplingDecl>
+        <p>The archival material has been transcribed and encoded.
+	Paratextual elements may be provided as digital images only, with some exceptions.</p>
+      </samplingDecl>
+      <editorialDecl>
+        <p>Processing this electronic text file began by creating TIFF
+images of each page using either a flatbed scanner.  Text pages were
+captured in color at 300dpi.  These digital images were converted to
+an electronic text file by transcription.  The text files produced
+have been proofread against the original document or a JPEG image of
+the original.  This proofread text file has then been encoded using
+the recommendations for Level 3 of the TEI in Libraries Guidelines.
+For the details of Level 3 encoding, please see the webpage for TEI
+Guidelines for Best Encoding practices at
+http://www.indiana.edu/~letrs/tei/.  Encoders silently replaced em
+dashes with two dashes.  Page numbers and other text such as titles
+displayed in brackets have been added by the encoder and do not appear
+in the original text.</p>
+      </editorialDecl>
+      <classDecl>
+        <taxonomy xml:id="lcsh">
+          <bibl>
+            <title>Library of Congress Subject Headings</title>
+          </bibl>
+        </taxonomy>
+<taxonomy xml:id="MARBL">
+<bibl>
+<title>MARBL Subjuct Headings</title>
+</bibl>
+</taxonomy>
+      </classDecl>
+    </encodingDesc>
+    <profileDesc>
+      <creation>
+        <rs type="collection">Oxford Experience</rs>
+        <rs type="language">English</rs>
+        <rs type="ethnicity">Caucasian</rs>
+        <rs type="form">Edited</rs>
+        <rs type="genre"></rs>
+        <rs type="geography">United States</rs>
+        <date>1800-1899</date>  <!-- or 1900-1999 -->
+      </creation>
+      <textClass>
+        <keywords scheme="#lcsh">
+          <list>
+            <item>Allen, Young John, 1836-1907.</item>
+            <item>Education--United States--History--19th century.</item>
+            <item>College students--Georgia.</item>
+            <item></item>
+            <item></item>
+          </list>
+        </keywords>
+<keywords scheme="MARBL">
+<list>
+<item>Emory College--History.</item>
+<item>Emory College--Students.</item>
+<item></item>
+</list>
+</keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change>
+        <date when="2007-12-05">December 5, 2007 </date>
+    
+          <name>Ada Leung, </name>
+         and
+	  <name>Christy</name> transcribed and encoded the text.
+      </change>
+    </revisionDesc>
+  </teiHeader>
+<text>
+<body>
+<div type="letter">
+<pb facs="1892-01-06_p1.jpg"/><lb/>
+<head>[K. T. Tsoong Letter, <date when="1909-06-06">Jan 6, 1909</date>]</head>
+	<dateline>
+			<date when="1892-01-06">Jan. 6, 1892</date>
+	</dateline>
+<salute>
+<hi rend="left">My dear</hi><name type="person">Dr. Allen</name>
+</salute>
+<p>I was made glad this evening when our negro - boy brought in your kind letter_dated <date when="1891-12-10">Dec 10</date>. I was more glad because this was the first letter I received from <name type="place">China</name> since I left there.</p>
+<p>In your letter, I noticed you say my postal (Japan) was written on the <date when="1891-11-20">20th</date> but not mailed till the<date when="1891-11-24">24th</date> Nov.  I think my friend failed to mail it promptly_ or perhaps the mail was not made up till they were ready to sail for <name type="place">Shanghai</name>. That friend whom I met on the Japanese str. was a stranger <pb facs="1892-01-06_p2.jpg"/>to me. I have never met him before &#x2014; and had never known him.  He looked like a Japanese, because he wears no cue and brought with him his Japanese wife and child. Then you know every passenger in the str. tried to introduce himself to others. I introduced myself to him when I found he was going to Yokohama&#x2014; and thought I would have some help from him. Indeed I received many helpful ways from him although he was a stranger. He told me he is a Chinaman, but he had been to Japan since he was a child and so he adopted their costumes &#x0026;c. He invited me to stay at his home and treated me kindly <pb facs="1892-01-06_p3.jpg" n="2"/>and warmly. </p><p>Our <name type="corporate">College</name> opened on the<date when="1892-01-01">1st Jan</date>.  <name type="person">Dr. Candler</name> placed me in mixed class &#x2014; from 1st yr Sub-Fresh up to Junior. The following are my text books:
+<list>
+<item>Arithmetic (1st Sub)</item>
+<item>Eng. Grammar (2nd ")</item>
+<item>Ancient History</item>
+<item>Bible (Sopho)</item>
+<item>Botany (Junior B.Ph.)</item>
+</list>
+My Bible and History recitations are under the President while others under different professors. I have to study very hard in order to catch up the other boys.</p>
+  <p>Last Saturday I caught a bad grippe and had <del>kept in till</del> been in bed four days. Last night <name type="person">Dr.Evans</name> came to see me and said I should not <pb facs="1892-01-06_p4.jpg"/>go out this week. During my sickness <name type="person">Mrs.Candler</name> has been so kind to me. She sometimes sent me some good_ dinner sometimes some fruit &#x0026;. Every time I go there she gave me something. <name type="person">Bro. Y&#x00FC;n</name> took dinner at Dr.Candler's house on New Year Day and we had a large turkey. By the way I must tell you the unexpected present which I received on Xmas eve. I went down to the church with some some boys in the hall desiring to see the Xmas tree and the children. After the Xmas service ended. <name type="person">Dr. Moore's  </name> brother dressed in a funny way and gave us a funny talk. After-wards they distributed the present according to their names <pb facs="1892-01-06_p5.jpg" n="3"/>written on that. Soon after I heard some Chinese name and I thought it was mine. I went up and saw it was my name it was a little package. When I opened my little package I found a nice pearl-scarf-pin with a card written on to <name type="person"> Mr. Bell</name> from <name type="person">Mrs. Candler</name>. I was so glad because I didn't expect to get any.</p>
+<p>Emory boys treat me very kindly and brotherly like way. The boys in the <name type="place">Marvin Hall</name> treat one so kindly that I cannot express to you. My roommate, <name type="person">Bro. Thompson</name>, is a very religious young man and helps me anyway he can. Some boys says they like to go with me to <name type="place">China</name> to preach. Last Friday was our Y.M.C.A prayer meeting <pb facs="1892-01-06_p6.jpg"/>and I said something about how China needs more missionary. Some of the boys just could hardly keep their tears from flowing out. Yes, I will try to be very useful on that line.</p>
+<p> As to our literary society I have not join yet, because I could not go down last Saturday morning. Many Phi Gamma boys come to me &#x0026; want me to join theirs; and, when the Few come and say join ours. I really don't know which to join. But I think I'll join the Phi Gamma and <name type="person"> Bro. Y&#x00FC;n </name> is a Few and it would be equal to have one on both sides.</p>
+<p> I suppose I wrote you in my last letter that when I was in <name type="place">San Francisco</name>, I did not go <pb facs="1892-01-06_p7.jpg" n="4"/>to see <name type="person">Dr. Hannon </name> for I was told by <name type="person"> Mr. Masters </name> that <name type="person"> Dr. H</name> had left there a long ago. But I went to see <name type="person">Bishop Fitzgerald</name> and he wasnt there either. I was told he has removed to <name type="place"> Nashville Tenn</name> I think I will write him a letter and send him my introducing letter at the same time. </p>
+<p> My letters is rather too long and if I dont stop I am afraid you will think it like Tennyson's Brook which runs on forever. I will therefore bring it to a close with love to all and to yourself. </p>
+<closer>
+<salute><hi rend="right">I am</hi><lb/>
+<hi rend="right">yours affectionately,</hi>
+</salute>
+<signed><name type="person">K.T. Tsoong</name></signed>
+</closer>
+</div>
+</body>
+</text>
+</TEI>

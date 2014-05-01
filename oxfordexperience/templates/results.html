@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% load existdb %}
+
+{% block title %}<h2>Search results for texts where:</h2>{% endblock %}
+
+{% block content %}
+<ul class='searchopts'><li>document contains keywords </li></ul><?xml version="1.0"?>
+<table class="searchnav"><tr><td/><td/><td/><td/></tr></table>
+
+<p class="info">Click on the number of hits to see your search terms in context.</p>
+<table class="browse"><thead style="font-size:small;"><tr><th
+  class="hits">hits</th><th
+    class="num">#</th><th>title</th><th>author</th><th>date</th></tr></thead><tbody
+      align="left" valign="top" style="font-size:small;">
+
+      
+  Displaying {{ all_docs_paginated.start_index }} - {{ all_docs_paginated.end_index }} of {{ all_docs_paginated.paginator.count }}
+ 
+  <ul>
+      {% for doc in all_docs_paginated.object_list %}
+      <li><a href="{% url doc_display doc.id %}{% if keyword %}?keyword={{ keyword }}{% endif %}">
+            {{ doc.title }}</a> 
+ 
+         
+      </li>
+      {% empty %}
+      <li>No records returned</li>
+      {% endfor %}
+  </ul>
+ 
+  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td colspan="3">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="160">
+    &nbsp;
+    {% if all_docs_paginated.has_previous %}
+        <a href="?page={{ all_docs_paginated.previous_page_number }}&keyword={{keyword}}&title={{title}}&author={{author}}">[ &nbsp;&lt;&lt; Previous&nbsp; ]</a>
+    {% endif %}
+    </td>
+   
+     <td align="center">
+      [&nbsp;
+      {% for current_page in all_docs_paginated.paginator.page_range %}
+        {% if all_docs_paginated.number == current_page %}
+          &nbsp;{{ current_page }}&nbsp;
+        {% else %}
+          <a href="?page={{ current_page }}&keyword={{keyword}}&title={{title}}&author={{author}}">&nbsp;{{ current_page }}&nbsp;</a>
+        {% endif %}
+      {% endfor %}
+      &nbsp;]
+     </td>
+ 
+      <td width="110" align="right">
+      {% if all_docs_paginated.has_next %}
+          <a href="?page={{ all_docs_paginated.next_page_number }}&keyword={{keyword}}&title={{title}}&author={{author}}">[ &nbsp;Next &gt;&gt;&nbsp; ]</a>
+      {% endif %}
+      &nbsp;
+      </td>
+  </tr>
+  </table>
+
+{% endif %}
+<pre>{{all_docs.serializeDocument}}</pre>
+  
+</tbody></table>
+
+{% endblock %}

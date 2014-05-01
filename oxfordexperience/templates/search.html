@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+
+{% block pagetitle %} Search {% endblock %}
+
+{% block title %}<h2>Search</h2>{% endblock %}
+{% block content %}
+
+{% if server_error %}{{ server_error }}{% endif %}
+
+{% if searchbox.is_valid %}
+<h3>Search results for texts where:</h3><ul class='searchopts'>
+{% if keyword %}<li>document contains keywords '{{keyword}}'</li>{% endif%}
+{% if title %}<li>title matches '{{title}}'</li>{% endif%}
+{% if author %}<li>author matches '{{author}}'</li>{% endif%}
+{% if date %}<li>date matches '{{date}}'</li>{% endif%}</ul>
+
+{% if docs_paginated.paginator.count %}
+<?xml version="1.0"?>
+<table class="searchnav"><tr><td/><td/><td/><td/></tr></table>
+{{ docs_paginated.paginator.count }} matches found</br>
+
+<p class="info">Click on the number of hits to see your search terms in context.</p>
+
+<table class="browse"><thead><tr><th>#</th>
+  <th>title</th><th>author</th><th>date</th></tr></thead><tbody
+      align="left" valign="top">
+      {% for doc in docs_paginated.object_list %}
+      <tr xmlns:tei="http://www.tei-c.org/ns/1.0"><td>{{forloop.counter|add:docs_paginated.start_index|add:-1}}.</td>
+      <td><a href="{% url doc_display doc.id %}{% if keyword %}?keyword={{ keyword }}{% endif %}">
+            {{ doc.title }}</a>          
+      </td><td>{{ doc.author }}</td><td>{{ doc.date }}</td></tr>
+      {% endfor %}
+      </tbody>
+  </table>
+{% else %}
+  <p><b>No matches found.</b>You may want to broaden your search
+  or consult the search tips for suggestions.</p>
+{% endif %}
+  
+  
+  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td colspan="3">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="160">
+    &nbsp;
+    {% if docs_paginated.has_previous %}
+        <a href="?page={{ docs_paginated.previous_page_number  }}&keyword={{ keyword }}&title={{title}}&author={{author}}&date={{date}}">[ &nbsp;&lt;&lt; Previous&nbsp; ]</a>
+    {% endif %}
+    </td>
+   
+     <td align="center">
+      [&nbsp;
+      {% for current_page in docs_paginated.paginator.page_range %}
+        {% if docs_paginated.number == current_page %}
+          &nbsp;{{ current_page }}&nbsp;
+        {% else %}
+          <a href="?page={{ current_page }}&keyword={{keyword}}&title={{title}}&author={{author}}&date={{date}}">&nbsp;{{ current_page }}&nbsp;</a>
+        {% endif %}
+      {% endfor %}
+      &nbsp;]
+     </td>
+ 
+      <td width="110" align="right">
+      {% if docs_paginated.has_next %}
+          <a href="?page={{ docs_paginated.next_page_number }}&keyword={{keyword}}&title={{title}}&author={{author}}&date={{date}}">[ &nbsp;Next &gt;&gt;&nbsp; ]</a>
+      {% endif %}
+      &nbsp;
+      </td>
+  </tr>
+  </table>
+
+  </tbody></table>
+{% endif %}
+<pre>{{docs.serializeDocument}}</pre>
+
+
+
+<hr/>
+<table class="searchform">
+<tr><td>
+<form name="articlequery" action="{% url search %}" method="get">
+<table>{{ searchbox.as_table }}</table>
+
+<input type="submit" value="Submit"> <input type="reset" value="Reset">
+</form>
+
+
+<td>
+<ul class ="searchtips"><b>Search tips:</b>
+<li>Search terms are matched against <i>whole words.</i></li>
+<li>Multiple words are allowed.</li>
+<li>Asterisks may be used when searching for multiple words from one root. <br/>
+For example, enter <b>resign*</b> to match <b>resign</b>, <b>resigned</b>, and
+<b>resignation</b>. </li>
+<li> Use several categories to narrow your search. For example, use author, keyword and 
+title to match a particular article.</li>
+<li>When searching on a state, try the abbreviated form as well. For example, use GA and Georgia
+to see search results for both.</li>
+</ul>
+</td>
+</tr>
+</table>
+
+<p class="searchtips">If you are interested in doing a more complex search, please
+contact the <a href="mailto:beckctr@emory.edu" >Beck Center
+Staff</a>.</p>
+<hr/>
+{% endblock %}

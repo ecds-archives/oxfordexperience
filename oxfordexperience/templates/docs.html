@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block pagetitle %} Browse {% endblock %}
+
+{% block title %}<h2>Oxford Experience Documents</h2>{% endblock %}
+
+{% block content %}
+{% if docs_paginated %}
+    <ul class="document">
+    {% for doc in docs_paginated.object_list %}
+        <li>
+      {% if doc.id %}
+        <a href="{% url doc_display doc.id %}">{{ doc.title }}</a>, {{doc.author}}
+      {% else %} 
+        {{ doc.title }}, {{doc.author}}
+      {% endif %}
+        </li>
+    {% endfor %}
+   </ul>
+{% else %}
+    <p>Nothing found.</p>
+{% endif %}
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="150">
+    &nbsp;
+    {% if docs_paginated.has_previous %}
+        <a href="?page={{ docs_paginated.previous_page_number }}{% if subject %}&subject={{subject}}{% endif %}">[ &nbsp;&lt;&lt; Previous &nbsp;]</a>
+    {% endif %}
+    </td>
+    
+     <td align="center">
+      [&nbsp; 
+      {% for current_page in docs_paginated.paginator.page_range %}
+        {% if docs_paginated.number == current_page %}
+          &nbsp;{{ current_page }}&nbsp;
+        {% else %}
+          <a href="?page={{ current_page }}{% if subject %}&subject={{ subject }}{% endif %}">&nbsp;{{ current_page }}&nbsp;</a>
+        {% endif %}
+      {% endfor %}
+      &nbsp;]
+     </td>
+  
+      <td width="150" align="right">
+      {% if docs_paginated.has_next %}
+          <a href="?page={{ docs_paginated.next_page_number }}{% if subject %}&subject={{subject}}{% endif %}">[ &nbsp;Next &gt;&gt;&nbsp; ]</a>
+      {% endif %}
+      &nbsp;
+      </td>
+  </tr>
+</table>
+
+{% endblock %}

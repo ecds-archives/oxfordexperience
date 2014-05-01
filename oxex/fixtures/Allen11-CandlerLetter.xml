@@ -1,0 +1,208 @@
+<TEI xml:id="oeAllen11-CandlerLetter" xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Letter to Young John Allen, <date when="1892-02-06">February 6, 1892</date>, an electronic edition</title>
+	<author>
+	  <name>
+	    <choice>
+	      <sic>Warren Akin Candler</sic>
+	      <reg>Candler, Warren A. (Warren Akin), 1857-1941</reg>
+	    </choice>
+	  </name>
+	</author>
+      </titleStmt>
+      <extent></extent>
+      <publicationStmt>
+        <publisher>Emory University, Lewis H. Beck Center</publisher>
+        <pubPlace>Atlanta, Georgia</pubPlace>
+        <date>2007</date>
+        <availability>
+          <p>&#x00A9; 2007, Lewis H. Beck Center, Emory University.
+  Emory University makes a claim of copyright only to original
+  contributions made by the Oxford Experience Project participants.  Emory University makes no claim of copyright to the original text.  Permission is granted to download, transmit, or otherwise reproduce, distribute, or display the contributions to this work claimed by Emory University for non-profit educational purposes, provided that this header is included in its entirety.  For further inquiries about this text's availability, please contact:
+<address><addrLine>Lewis H. Beck Center</addrLine><addrLine>Emory University</addrLine><addrLine>Robert W. Woodruff Library</addrLine><addrLine>Atlanta, GA  30322-0053</addrLine><addrLine>United States of America</addrLine><addrLine>Email:  beckctr@emory.edu</addrLine></address></p>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <title>The Oxford Experience</title>
+        <respStmt>
+          <name>Christine Loflin</name>
+	  <name>Adriane Ivey</name>
+          <resp>Principal Investigators</resp>
+        </respStmt>
+      </seriesStmt>
+      <sourceDesc>
+        <bibl><title>Letter from Warren Akin Candler to Young John Allen</title>, <date when="1892-02-06">February 6, 1892</date>; Young John Allen Papers, Manuscript, Archive, and Rare Book Library, Emory University.</bibl>
+	<listPerson>
+          <person xml:id="thyun">
+            <persName>
+              <forename>T.</forename>
+              <forename>H.</forename>
+              <surname>Yun</surname>
+            </persName>
+            <persName>
+              <forename>Ch'i-ho</forename>
+              <surname>Yun</surname>
+            </persName>
+            <birth when="1865">
+              <placeName>
+                <country>Korea</country>
+              </placeName>
+            </birth>
+            <death when="1945-12-06">December 6, 1945</death>
+          </person>
+          <person xml:id="wac">
+            <persName>
+              <forename>Warren</forename>
+              <forename>Akin</forename>
+              <surname>Candler</surname>
+            </persName>
+            <birth when="1857-08-23">
+              <placeName>
+                <settlement type="county">Carroll County</settlement>
+                <region type="state">Georgia</region>
+                <country>United States</country>
+              </placeName>
+            </birth>
+            <death when="1941-09-25">
+              <placeName>
+                <settlement type="city">Atlanta</settlement>
+                <region type="state">Georgia</region>
+                <country>United States</country>
+              </placeName>
+            </death>
+          </person>
+          <person xml:id="tsoong">
+            <persName>
+              <forename>Kia</forename>
+              <forename>Tsing</forename>
+              <surname>Tsoong</surname>
+            </persName>
+            <persName>
+              <forename>George</forename>
+              <surname>Bell</surname>
+            </persName>
+          </person>
+	</listPerson>
+
+	<listOrg>
+	  <org>
+	    <name xml:id="EC">Emory College</name>
+	    <placeName>
+	    <settlement>Oxford</settlement>
+	    <region>Georgia</region>
+	    </placeName>
+	  </org>
+	</listOrg>
+
+	<listPlace>
+	  <place>
+	    <placeName>
+	      <settlement>Oxford</settlement>
+	      <region>Georgia</region>
+	    </placeName>
+	  </place>
+	</listPlace>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>This text was created by the Lewis H. Beck Center as a part
+	of the Oxford Experience Project.  Project participants intend for this encoded text, as well as all texts produced by this project, to be made available on the web for educational, scholarly and pedagogical purposes.</p>
+      </projectDesc>
+      <samplingDecl>
+        <p>The archival material has been transcribed and encoded.
+	Paratextual elements may be provided as digital images only, with some exceptions.</p>
+      </samplingDecl>
+      <editorialDecl>
+        <p>Processing this electronic text file began by creating TIFF
+images of each page using either a flatbed scanner.  Text pages were
+captured in color at 300dpi.  These digital images were converted to
+an electronic text file by transcription.  The text files produced
+have been proofread against the original document or a JPEG image of
+the original.  This proofread text file has then been encoded using
+the recommendations for Level 3 of the TEI in Libraries Guidelines.
+For the details of Level 3 encoding, please see the webpage for TEI
+Guidelines for Best Encoding practices at
+http://www.indiana.edu/~letrs/tei/.  Encoders silently replaced em
+dashes with two dashes.  Page numbers and other text such as titles
+displayed in brackets have been added by the encoder and do not appear
+in the original text.</p>
+      </editorialDecl>
+      <classDecl>
+        <taxonomy xml:id="lcsh">
+          <bibl>
+            <title>Library of Congress Subject Headings</title>
+          </bibl>
+        </taxonomy>
+<taxonomy xml:id="MARBL">
+<bibl>
+<title>MARBL Subjuct Headings</title>
+</bibl>
+</taxonomy>
+      </classDecl>
+    </encodingDesc>
+    <profileDesc>
+      <creation>
+        <rs type="collection">Oxford Experience</rs>
+        <rs type="language">English</rs>
+        <rs type="ethnicity">Caucasian</rs>
+        <rs type="form">Edited</rs>
+        <rs type="genre"></rs>
+        <rs type="geography">United States</rs>
+        <date>1800-1899</date>  <!-- or 1900-1999 -->
+      </creation>
+      <textClass>
+        <keywords scheme="#lcsh">
+          <list>
+            <item>Candler, Warren Akin, 1857-1941.</item>
+            <item></item>
+            <item>Allen, Young John, 1836-1907.</item>
+            <item>Missionaries--American--1880-1900.</item>
+            <item></item>
+          </list>
+        </keywords>
+<keywords scheme="MARBL">
+<list>
+<item>Emory College--History.</item>
+<item></item>
+<item></item>
+<item></item>
+</list>
+</keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2007-07-05" who="#NN"><name xml:id="NN">Naomi Nelson, </name>Assistant Director, MARBL, Emory University, transcribed and encoded the text.</change>
+    </revisionDesc>
+  </teiHeader>
+<text>
+<front><!-- Critical introduction goes here --></front>
+<body>
+<div type="letter">
+<head>[Letter from Warren Akin Candler to Young John Allen, February 6, 1892]</head>
+<opener>
+<address><addrLine>President's Office</addrLine></address><lb/>
+<dateline>
+<name type="place">Oxford, Ga.,</name>
+<date when="1892-02-06">February 6, 1892</date>
+</dateline>
+<salute>My Dear <name type="person">Dr. Allen</name>:</salute>
+</opener>
+<p>Yours of recent date has been received.</p>
+<p><name type="person" ref="#tsoong">Tsoong-Kia Tsin</name> came in on good time and is fully at his work.  He is not altogether as intellectual as <name type="person" ref="#yun">Yun</name> but is making a good impression.</p>
+<p><name type="person" ref="#yun">Yun</name> has spoken somewhat in <name type="place">Georgia</name> and next Sunday both of them will go with me to <name type="place">Atlanta</name> for a missionary meeting.  I have never known the missionary spirit in <name type="corporate">Emory College</name> so strong, resolute and intelligent.  There are good recruits for the field among our young men.  I have good hope that the debt will be lifted from the Board by June and some new men sent out in the fall.</p>
+<p>I think I can get the $115 returned to you -- money used in sending <name type="person" ref="#tsoong"> Tsoong Kia Tsin</name> out.</p>
+<p>Your kind words personal to myself are encouraging.  I often feel very ill suited to this <del rend="strikethrough" resp="#NN" cert="high" hand="author">field</del> work and am ready to quit it.  Indeed I came here on <unclear reason="illegible" resp="NN">face</unclear> of what seemed Providence -- not of my own desire or procuring.  But God has been good.  The College has prospered beyond all former years and I should be content.</p>
+<p>Dr. [Potter's?] death was a great loss.  He was the head of our missionary work.  The other field secretary while <unclear reason="illegible" resp="NN">clever</unclear> man does not grasp the situation as did Doctor <unclear reason="illegible" resp="NN">Potter</unclear>. Many of us though are trying to help and the light is breaking.  Relief <unclear reason="illegible" resp="NN">come</unclear> to you.  Don't despond a moment.  Your burden I know is heavy and the sluggishness of the Church to respond with cordial coorperation makes me fret at times.  But the church is waking up.  This year I am certain will show marked advance, despite the financial depression which prevails all over the South.</p>
+<p>The January opening of the <name type="corporate" ref="#EC">College</name> was very fine, <hi rend="underline">exceeding</hi> the fall attendance considerably.  We have now 287 enrolled.  We will reach 300 I think.  I wish you could look in on us and speak to our boys.  Some of them you will yet see in <name type="place">China</name>. </p>
+<p>May our Father's blessings abide with you always.</p>
+<closer>
+<salute>I am yours affectionately,</salute>
+<signed><name type="person" ref="#wac">W. A. Candler</name></signed>
+</closer>
+</div>
+</body>
+</text>
+</TEI>

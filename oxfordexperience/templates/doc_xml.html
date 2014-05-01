@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block pagetitle %} Documents {% endblock %}
+
+{% block title %}<h2>Oxford Experience Documents</h2>{% endblock %}
+{% block content %}
+<p><a href="{% url doc_display doc.id %}">Return to document </a></br></p>
+
+{% if doc %}
+  {% if xml_tei %}
+     {{ xml_tei|safe}}
+  {% else %}
+    <pre>{{doc.body.serializeDocument}}</pre>
+  {% endif %}
+{% else %}
+    <p>Nothing found</p>
+{% endif %}
+
+{% endblock %}

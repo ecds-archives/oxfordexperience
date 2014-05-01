@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block meta%}
+{# embed Dublin Core metadata for this finding aid in the html header #}
+  {% with doc.dc_fields as dc_fields %}
+    {% include "dc_meta.html" %}
+  {% endwith %}
+{% endblock %}
+
+{% block pagetitle %}Document {% endblock %}
+
+
+{% block title %}<h2>Oxford Experience Documents</h2>{% endblock %}
+{% block content %}
+<p>Go to <a href="{% url docs %}">Document List</a></br></br>
+<a href="{% url doc_xml doc.id  %}">View</a>
+ or <a href="{% url doc_down doc.id %}">Download</a>
+ the TEI xml code for this page</a>
+<!--a href="">View image of page</a></br--></p>
+
+{% if doc %}
+  {% if format %}
+    {{ format|safe }}
+<p>Go to <a href="{% url docs %}">Document List</a></p>
+  {% else %}
+    <p>No format</p>
+  {% endif %}
+{% else %}
+    <p>Nothing found</p>
+{% endif %}
+
+<!--pre>{{doc.body.serializeDocument}}</pre-->
+
+{% endblock %}
