@@ -18,16 +18,16 @@
 </div>
 
 <div>
-<form action="{% url search %}" method="get"><p class="searchbox"><b>keyword search:</b><input id="key"
+<form action="{% url "search" %}"><p class="searchbox"><b>keyword search:</b><input id="key"
   type="text" size="20" name="keyword"/> <input type="Submit" value="Go"></p></form>
 </div>
 
 <div class="subnav">
 <p class="navlinks">
-<a href="{% url docs %}"><span id="ho">Home</span></a>
-<a href="{% url overview %}"><span id="ov">Overview</span></a>
-<a href="{% url docs %}"><span id="br">Browse</span></a>
-<a href="{% url search %}"><span id="se">Search</span></a>
+<a href="{% url "docs" %}"><span id="ho">Home</span></a>
+<a href="{% url "overview" %}"><span id="ov">Overview</span></a>
+<a href="{% url "docs" %}"><span id="br">Browse</span></a>
+<a href="{% url "search" %}"><span id="se">Search</span></a>
 </p></div>
 
 <div class="contents">
@@ -41,7 +41,7 @@
 <div class="externalnav">
 <p class="links" id="beck">
 <a href="http://beck.library.emory.edu/"><span id="bc">The Beck Center</span></a>
-<a href="http://www.emory.edu/OXFORD/"><span id="src">Oxford College</span></a>
+<a href="http://oxford.emory.edu/"><span id="src">Oxford College</span></a>
 </p>
 </div>
 

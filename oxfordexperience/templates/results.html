@@ -18,7 +18,7 @@
  
   <ul>
       {% for doc in all_docs_paginated.object_list %}
-      <li><a href="{% url doc_display doc.id %}{% if keyword %}?keyword={{ keyword }}{% endif %}">
+      <li><a href="{% url "doc_display" doc.id %}{% if keyword %}?keyword={{ keyword }}{% endif %}">
             {{ doc.title }}</a> 
  
          

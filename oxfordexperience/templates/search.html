@@ -26,7 +26,7 @@
       align="left" valign="top">
       {% for doc in docs_paginated.object_list %}
       <tr xmlns:tei="http://www.tei-c.org/ns/1.0"><td>{{forloop.counter|add:docs_paginated.start_index|add:-1}}.</td>
-      <td><a href="{% url doc_display doc.id %}{% if keyword %}?keyword={{ keyword }}{% endif %}">
+      <td><a href="{% url "doc_display" doc.id %}{% if keyword %}?keyword={{ keyword }}{% endif %}">
             {{ doc.title }}</a>          
       </td><td>{{ doc.author }}</td><td>{{ doc.date }}</td></tr>
       {% endfor %}
@@ -80,7 +80,7 @@
 <hr/>
 <table class="searchform">
 <tr><td>
-<form name="articlequery" action="{% url search %}" method="get">
+<form name="articlequery" action="{% url "search" %}">
 <table>{{ searchbox.as_table }}</table>
 
 <input type="submit" value="Submit"> <input type="reset" value="Reset">

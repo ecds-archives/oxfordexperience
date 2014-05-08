@@ -8,7 +8,7 @@
 <table name="searchform">
 <tr><td>
 
-<form name="articlequery" action="{% url search %}" method="get">
+<form name="articlequery" action="{% url "search" %}">
 <table class="searchform" border="0">
 <tr><td><table>{{ searchbox.as_table }}</table></td></tr>
 
@@ -45,7 +45,7 @@ contact the <a href="mailto:beckctr@emory.edu" >Beck Center Staff</a>.</p>
  
   <ul>
       {% for doc in all_docs_paginated.object_list %}
-      <li><a href="{% url doc_display:doc doc.id %}{% if keyword %}?keyword={{ keyword }}{% endif %}">
+      <li><a href="{% url "doc_display:doc" doc.id %}{% if keyword %}?keyword={{ keyword }}{% endif %}">
             {{ doc.title }}</a> 
  
          

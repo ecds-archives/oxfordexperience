@@ -4,7 +4,7 @@
 
 {% block title %}<h2>Oxford Experience Documents</h2>{% endblock %}
 {% block content %}
-<p><a href="{% url doc_display doc.id %}">Return to document </a></br></p>
+<p><a href="{% url "doc_display" doc.id %}">Return to document </a></br></p>
 
 {% if doc %}
   {% if xml_tei %}

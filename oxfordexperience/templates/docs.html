@@ -10,7 +10,7 @@
     {% for doc in docs_paginated.object_list %}
         <li>
       {% if doc.id %}
-        <a href="{% url doc_display doc.id %}">{{ doc.title }}</a>, {{doc.author}}
+        <a href="{% url "doc_display" doc.id %}">{{ doc.title }}</a>, {{doc.author}}
       {% else %} 
         {{ doc.title }}, {{doc.author}}
       {% endif %}
