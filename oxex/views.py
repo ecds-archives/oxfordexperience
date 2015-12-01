@@ -70,7 +70,7 @@ def doc_down(request, doc_id):
   try:
     doc = DocTitle.objects.get(id__exact=doc_id)
     xml_tei = doc.serialize(pretty=True)
-    return HttpResponse(xml_tei, mimetype='application/tei+xml')
+    return HttpResponse(xml_tei, content_type='application/tei+xml')
   except DoesNotExist:
     raise Http404
     
