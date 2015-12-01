@@ -8,8 +8,9 @@ admin.autodiscover()
 from oxex.views import docs, doc_display, doc_xml, overview, searchbox
 
 urlpatterns = patterns('oxex.views',
-  url(r'^$', 'docs', name='docs'),
+  url(r'^$', 'overview', name='overview'),
   url(r'^search/$', 'searchbox', name='search'),
+  url(r'^browse/$', 'docs', name='docs'),
   url(r'^overview/$', 'overview', name='overview'),
   url(r'^(?P<doc_id>[^/]+)/$', 'doc_display', name="doc_display"),
   url(r'^(?P<doc_id>[^/]+)/view=xml$', 'doc_xml', name="doc_xml"),
