@@ -10,8 +10,9 @@
 {% block pagetitle %}Document {% endblock %}
 
 
-{% block title %}<h2>Oxford Experience Documents</h2>{% endblock %}
+{% block title %}{% endblock %}
 {% block content %}
+<h2>Oxford Experience Documents</h2><pre></pre><hr></hr>
 <p>Go to <a href="{% url "docs" %}">Document List</a></br></br>
 <a href="{% url "doc_xml" doc.id  %}">View</a>
  or <a href="{% url "doc_down" doc.id %}">Download</a>
@@ -21,7 +22,7 @@
 {% if doc %}
   {% if format %}
     {{ format|safe }}
-<p>Go to <a href="{% url "docs" %}">Document List</a></p>
+<br><br><p>Go to <a href="{% url "docs" %}">Document List</a></p>
   {% else %}
     <p>No format</p>
   {% endif %}

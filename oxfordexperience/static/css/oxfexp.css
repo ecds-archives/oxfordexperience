@@ -1,7 +1,7 @@
 /*@import "highlight.css";*/
 @import "footnotes.css";
-body { color: #333333;
-     background-image: url(../images/bg1.gif);}
+body { color: #333333;}
+     /* background-image: url(../images/bg1.gif);} */
 /* styles for the header and footer */
 div.header, div.footer { text-align: center; width: 700px;  /*width: 665px;*/ margin: auto; }
 /*div.header, div.footer { center: true; text-align: center; width: 665px; margin: auto; clear: both; }*/
@@ -21,6 +21,21 @@ div.header h2 { font-family: "Arial", "MS Arial", sans-serif;
 	   margin: -4px; 
 	   line-height:120%;}
  
+div.page-header {
+    text-align:center;
+    padding:0px 0px 0px;
+    margin: 0 auto;
+}
+
+div.page-header img{
+    margin: 0 auto;  
+}
+
+div.page-header {
+    /* background-color: #ebf2f7; */
+    background-color: #f4e8ce;
+}
+
 div.headerseachbox {text-align: center;
 		   display: block;
 	    	   width: 50%; }
@@ -30,7 +45,6 @@ p.searchbox {font-family: Arial, sans-serif;
 	    display: block; 
 	    margin-left: auto;
 	    margin-right: auto; 
-	    background-color: #684E4C; 
 	    padding: 10px; }
 
 /*p.searchbox{font-size:80%; text-align:center; margin-left:5px; background-color: #eeeeee; padding:4px; }*/

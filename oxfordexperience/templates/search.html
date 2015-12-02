@@ -2,9 +2,9 @@
 
 {% block pagetitle %} Search {% endblock %}
 
-{% block title %}<h2>Search</h2>{% endblock %}
+{% block title %}{% endblock %}
 {% block content %}
-
+<h2>Search</h2>
 {% if server_error %}{{ server_error }}{% endif %}
 
 {% if searchbox.is_valid %}

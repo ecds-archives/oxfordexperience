@@ -6,3 +6,4 @@ ply
 -e git://github.com/emory-libraries/eulxml.git#egg=eulxml
 -e git://github.com/emory-libraries/eulexistdb.git#egg=eulexistdb
 -e git://github.com/emory-libraries/eulcommon.git#egg=eulcommon
+-e git://github.com/emory-libraries/django-eultheme.git#egg=eultheme

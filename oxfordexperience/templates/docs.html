@@ -2,9 +2,11 @@
 
 {% block pagetitle %} Browse {% endblock %}
 
-{% block title %}<h2>Oxford Experience Documents</h2>{% endblock %}
+{% block title %}{% endblock %}
 
 {% block content %}
+<h2>Oxford Experience Documents</h2><br>
+<pre></pre><hr></hr>
 {% if docs_paginated %}
     <ul class="document">
     {% for doc in docs_paginated.object_list %}
