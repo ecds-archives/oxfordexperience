@@ -23,7 +23,7 @@ div.header h2 { font-family: "Arial", "MS Arial", sans-serif;
  
 div.page-header {
     text-align:center;
-    padding:0px 0px 0px;
+    padding:5px 5px 5px;
     margin: 0 auto;
 }
 
@@ -33,7 +33,7 @@ div.page-header img{
 
 div.page-header {
     /* background-color: #ebf2f7; */
-    background-color: #f4e8ce;
+    background-color: #333333;
 }
 
 div.headerseachbox {text-align: center;
