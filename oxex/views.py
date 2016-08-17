@@ -7,6 +7,7 @@ from django.http import HttpResponse, Http404
 from django.core.paginator import Paginator, InvalidPage, EmptyPage, PageNotAnInteger
 from django.template import RequestContext
 from django.shortcuts import redirect
+from django.contrib import messages
 
 from oxex.models import DocTitle, Doc, Bibliography, SourceDescription, DocSearch
 from oxex.forms import DocSearchForm
@@ -14,7 +15,7 @@ from oxex.forms import DocSearchForm
 from eulcommon.djangoextras.http.decorators import content_negotiation
 from eulexistdb.query import escape_string
 from eulexistdb.exceptions import DoesNotExist
- 
+from eulexistdb.db import ExistDBException 
 def docs(request):
   docs =DocTitle.objects.only('id', 'title', 'date', 'author').order_by('date')
   number_of_results = 26
@@ -79,6 +80,7 @@ def overview(request):
    return render(request, 'overview.html')
  
 def searchbox(request):
+    query_error = False
     "Search documents by keyword/title/author/date"
     form = DocSearchForm(request.GET)
     response_code = None
@@ -96,30 +98,41 @@ def searchbox(request):
         if 'date' in form.cleaned_data and form.cleaned_data['date']:
             search_opts['date__fulltext_terms'] = '%s' % form.cleaned_data['date']
 
-        docs = DocTitle.objects.only('id', 'title', 'date', 'author').filter(**search_opts).order_by('title')
-        if 'keyword' in form.cleaned_data and form.cleaned_data['keyword']:
-            docs = docs.only_raw(line_matches='%%(xq_var)s//text[ft:query(., "%s")]' \
+        try:
+            docs = DocTitle.objects.only('id', 'title', 'date', 'author').filter(**search_opts).order_by('title')
+            if 'keyword' in form.cleaned_data and form.cleaned_data['keyword']:
+                docs = docs.only_raw(line_matches='%%(xq_var)s//text[ft:query(., "%s")]' \
                                     % escape_string(form.cleaned_data['keyword']))
 
-        searchbox_paginator = Paginator(list(docs), number_of_results)
-        try:
-            page = int(request.GET.get('page', '1'))
-        except ValueError:
-            page = 1
-        # If page request (9999) is out of range, deliver last page of results.
-        try:
-            searchbox_page = searchbox_paginator.page(page)
-        except (EmptyPage, InvalidPage):
-            searchbox_page = searchbox_paginator.page(paginator.num_pages)
+            searchbox_paginator = Paginator(list(docs), number_of_results)
+            try:
+                page = int(request.GET.get('page', '1'))
+            except ValueError:
+                page = 1
+            # If page request (9999) is out of range, deliver last page of results.
+            try:
+                searchbox_page = searchbox_paginator.page(page)
+            except (EmptyPage, InvalidPage):
+                searchbox_page = searchbox_paginator.page(paginator.num_pages)
 
-        context['docs_paginated'] = searchbox_page
-        context['keyword'] = form.cleaned_data['keyword']
-        context['title'] = form.cleaned_data['title']
-        context['author'] = form.cleaned_data['author']
-        context['date'] = form.cleaned_data['date']
+            context['docs_paginated'] = searchbox_page
+            context['keyword'] = form.cleaned_data['keyword']
+            context['title'] = form.cleaned_data['title']
+            context['author'] = form.cleaned_data['author']
+            context['date'] = form.cleaned_data['date']
            
-        response = render_to_response('search.html', context, context_instance=RequestContext(request))
-    #no search conducted yet, default form
+            response = render_to_response('search.html', context, context_instance=RequestContext(request))
+     
+        #no search conducted yet, default form
+        except ExistDBException as e:
+            query_error = True
+            if 'Cannot parse' in e.message():
+                messages.error(request, 'Your search query could not be parsed.  ' + 'Please revise your search and try again.')
+            else:
+                # generic error message for any other exception
+                messages.error(request, 'There was an error processing your search.')
+            response = render(request, 'search.html',{'searchbox': form, 'request': request})
+
     else:
         response = render(request, 'search.html', {
                     "searchbox": form
@@ -127,4 +140,7 @@ def searchbox(request):
        
     if response_code is not None:
         response.status_code = response_code
+    if query_error:
+        response.status_code = 400 
+    
     return response

@@ -6,7 +6,13 @@
 {% block content %}
 <h2>Search</h2>
 {% if server_error %}{{ server_error }}{% endif %}
-
+{% if messages %}
+<ul class="messages">
+    {% for message in messages|slice:":1" %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}><font color="red">{{ message }}</font></li>
+    {% endfor %}
+</ul>
+{% endif %}
 {% if searchbox.is_valid %}
 <h3>Search results for texts where:</h3><ul class='searchopts'>
 {% if keyword %}<li>document contains keywords '{{keyword}}'</li>{% endif%}
